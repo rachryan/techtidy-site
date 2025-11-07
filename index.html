@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>TechTidy — Freelance Tech Consulting</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="container">
+    <h1>TechTidy</h1>
+    <p>Streamlined systems, simple automation, and AI that actually helps.</p>
+  </header>
+
+  <main class="container">
+    <section class="grid">
+      <a class="cube" href="#basics"><h2>Basic Tech</h2><p>Navigate your system with confidence.</p></a>
+      <a class="cube" href="#ai"><h2>Everyday AI</h2><p>Use AI to save time and reduce friction.</p></a>
+      <a class="cube" href="#automation"><h2>Automation</h2><p>Connect tools so work flows, not you.</p></a>
+      <a class="cube" href="#contact"><h2>Work with me</h2><p>Audits, setup, and training.</p></a>
+    </section>
+
+    <section id="contact" class="contact">
+      <h3>Get in touch</h3>
+      <p>Email: <a href="mailto:you@yourdomain.com">you@yourdomain.com</a></p>
+      <!-- Later we’ll swap this for a real form provider -->
+    </section>
+  </main>
+
+  <footer class="container">
+    <small>© <span id="y"></span> TechTidy. All rights reserved.</small>
+    <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+  </footer>
+</body>
+</html>

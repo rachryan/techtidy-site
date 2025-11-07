@@ -3,33 +3,79 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>TechTidy — Freelance Tech Consulting</title>
+  <title>TechTidy — Practical Tech, Everyday AI, and Automation</title>
+  <meta name="description" content="Streamlined systems, everyday AI skills, and lightweight automation for small teams." />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header class="container">
-    <h1>TechTidy</h1>
-    <p>Streamlined systems, simple automation, and AI that actually helps.</p>
+  <!-- Header -->
+  <header class="container header">
+    <a href="#home" class="brand">TechTidy</a>
+    <nav class="nav">
+      <a href="#learn">Learn</a>
+      <a href="#services">Services</a>
+      <a href="#contact" class="cta">Contact</a>
+    </nav>
   </header>
 
-  <main class="container">
-    <section class="grid">
-      <a class="cube" href="#basics"><h2>Basic Tech</h2><p>Navigate your system with confidence.</p></a>
-      <a class="cube" href="#ai"><h2>Everyday AI</h2><p>Use AI to save time and reduce friction.</p></a>
-      <a class="cube" href="#automation"><h2>Automation</h2><p>Connect tools so work flows, not you.</p></a>
-      <a class="cube" href="#contact"><h2>Work with me</h2><p>Audits, setup, and training.</p></a>
-    </section>
+  <!-- Hero -->
+  <section id="home" class="container hero">
+    <h1>Streamlined systems. Simple AI. Automation that saves hours.</h1>
+    <p class="lede">
+      I help small teams clean up their tech, adopt everyday AI skills, and automate repetitive work—
+      so people can focus on what matters.
+    </p>
+    <p class="hero-actions">
+      <a href="#contact" class="btn btn-primary">Start a project</a>
+      <a href="#learn" class="btn btn-outline">See how it works</a>
+    </p>
+  </section>
 
-    <section id="contact" class="contact">
-      <h3>Get in touch</h3>
-      <p>Email: <a href="mailto:you@yourdomain.com">you@yourdomain.com</a></p>
-      <!-- Later we’ll swap this for a real form provider -->
-    </section>
-  </main>
+  <!-- Cubes -->
+  <section id="learn" class="container">
+    <div class="grid">
+      <a class="cube cube-1" href="#basics">
+        <h2>Basic Tech</h2>
+        <p>Navigate your system with confidence.</p>
+      </a>
+      <a class="cube cube-2" href="#ai">
+        <h2>Everyday AI</h2>
+        <p>Use AI to save time and reduce friction.</p>
+      </a>
+      <a class="cube cube-3" href="#automation">
+        <h2>Automation</h2>
+        <p>Connect tools so work flows, not you.</p>
+      </a>
+      <a class="cube cube-4" href="#contact">
+        <h2>Work with me</h2>
+        <p>Audits, setup, and training.</p>
+      </a>
+    </div>
+  </section>
 
-  <footer class="container">
+  <!-- Services (placeholder copy you can edit later) -->
+  <section id="services" class="container services">
+    <h2>Services</h2>
+    <ul class="service-list">
+      <li><strong>Starter Cleanup</strong> — system tidy, storage structure, password manager basics.</li>
+      <li><strong>Everyday AI Sprint</strong> — team workshop, prompt playbook, follow-up coaching.</li>
+      <li><strong>Automation Pilot</strong> — pick one bottleneck workflow and automate it end-to-end.</li>
+    </ul>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="container contact">
+    <h2>Get in touch</h2>
+    <p>Email: <a href="mailto:you@yourdomain.com">you@yourdomain.com</a></p>
+    <!-- Later we can swap this for Formspree/Netlify forms -->
+  </section>
+
+  <footer class="container footer">
     <small>© <span id="y"></span> TechTidy. All rights reserved.</small>
-    <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
   </footer>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>

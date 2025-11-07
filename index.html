@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>TechTidy Consulting — Practical Tech, Everyday AI, and Automation</title>
-  <meta name="description" content="TechTidy helps small teams get organized, adopt everyday AI, and automate repetitive work. Practical training, clean systems, real outcomes." />
+  <meta name="description" content="TechTidy helps small teams clean up Microsoft 365 & Google Workspace, adopt everyday AI safely, and automate repetitive work with Power Automate, Zapier, and Make. Practical training, clean systems, measurable outcomes." />
   <meta property="og:title" content="TechTidy Consulting" />
   <meta property="og:description" content="Practical tech support, everyday AI skills, and lightweight automation for small organizations." />
   <meta property="og:type" content="website" />
@@ -14,10 +14,8 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
     html { scroll-behavior: smooth; }
-    /* Accent grid cubes */
     .cube { transition: transform 200ms ease, box-shadow 200ms ease; }
     .cube:hover { transform: translateY(-6px); box-shadow: 0 20px 35px rgba(0,0,0,.12); }
-    /* Simple focus ring for accessibility */
     .focus-ring:focus { outline: 3px solid rgb(59 130 246); outline-offset: 2px; }
   </style>
 </head>
@@ -32,9 +30,11 @@
           <a href="#services" class="hover:text-sky-600">Services</a>
           <a href="#process" class="hover:text-sky-600">Process</a>
           <a href="#about" class="hover:text-sky-600">About</a>
+          <a href="#book" class="hover:text-sky-600">Book</a>
           <a href="#contact" class="hover:text-sky-600">Contact</a>
         </nav>
-        <a href="#contact" class="inline-flex md:hidden px-3 py-1.5 rounded-lg bg-sky-600 text-white text-sm">Contact</a>
+        <a href="#book" class="hidden md:inline-flex px-3 py-1.5 rounded-lg bg-sky-600 text-white text-sm">Book a session</a>
+        <a href="#book" class="inline-flex md:hidden px-3 py-1.5 rounded-lg bg-sky-600 text-white text-sm">Book</a>
       </div>
     </div>
   </header>
@@ -45,13 +45,13 @@
       <div class="grid lg:grid-cols-2 gap-12 items-center">
         <div>
           <h1 class="text-4xl sm:text-5xl font-bold tracking-tight leading-tight">
-            Practical Tech. Everyday AI. <span class="text-sky-600">Automation that saves hours.</span>
+            Practical tech. Everyday AI. <span class="text-sky-600">Automation that saves hours.</span>
           </h1>
           <p class="mt-6 text-lg text-slate-600 max-w-xl">
-            I'm <strong>Rachel Ryan</strong>. I help small teams clean up their systems, adopt everyday AI skills, and automate repetitive work so people can focus on what matters.
+            I'm <strong>Rachel Ryan</strong>. I help small teams clean up Microsoft&nbsp;365 & Google Workspace, use AI safely, and automate repetitive work—so people can focus on what matters.
           </p>
           <div class="mt-8 flex flex-wrap items-center gap-4">
-            <a href="#contact" class="px-5 py-3 rounded-xl bg-sky-600 text-white font-medium shadow hover:shadow-lg focus-ring">Start a project</a>
+            <a href="#book" class="px-5 py-3 rounded-xl bg-sky-600 text-white font-medium shadow hover:shadow-lg focus-ring">Book a session</a>
             <a href="#learn" class="px-5 py-3 rounded-xl border border-slate-300 font-medium hover:bg-slate-50 focus-ring">See how it works</a>
           </div>
           <dl class="mt-10 grid grid-cols-2 gap-6 max-w-md text-sm">
@@ -67,7 +67,7 @@
         </div>
         <div class="lg:justify-self-end">
           <!-- Colorful cubes grid -->
-          <div class="grid grid-cols-3 gap-4 max-w-md mx-auto lg:mx-0">
+          <div class="grid grid-cols-3 gap-4 max-w-md mx-auto lg:mx-0" aria-hidden="true">
             <div class="cube aspect-square rounded-2xl bg-rose-400/90"></div>
             <div class="cube aspect-square rounded-2xl bg-amber-400/90"></div>
             <div class="cube aspect-square rounded-2xl bg-emerald-400/90"></div>
@@ -127,6 +127,48 @@
           </ul>
         </article>
       </div>
+
+      <!-- Microsoft 365 + Google Workspace capability strip -->
+      <div class="mt-10 grid md:grid-cols-2 gap-6">
+        <div class="rounded-2xl border border-slate-200 p-6 bg-white">
+          <h3 class="text-lg font-semibold">Microsoft 365</h3>
+          <p class="mt-2 text-slate-600">OneDrive & SharePoint, Teams, Outlook, Power Automate, Admin.</p>
+        </div>
+        <div class="rounded-2xl border border-slate-200 p-6 bg-white">
+          <h3 class="text-lg font-semibold">Google Workspace</h3>
+          <p class="mt-2 text-slate-600">Drive, Docs/Sheets/Slides, Gmail, Admin Console, AppSheet basics.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quick Help Video -->
+  <section id="quick-help" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl">
+        <h2 class="text-3xl font-bold tracking-tight">Quick help: how this works</h2>
+        <p class="mt-4 text-slate-600">90 seconds on scope → session → outcomes. Start small, prove value, scale wisely.</p>
+      </div>
+      <div class="mt-8 grid lg:grid-cols-2 gap-8 items-start">
+        <div class="aspect-video rounded-2xl overflow-hidden border border-slate-200">
+          <!-- Replace src with your Loom/YouTube -->
+          <iframe class="w-full h-full" src="https://www.youtube.com/embed/VIDEO_ID" title="How TechTidy works" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <ul class="space-y-4 text-slate-700">
+          <li class="flex gap-3">
+            <span class="text-slate-500 font-semibold">01</span>
+            <div><strong>Pick a goal.</strong> Cleanup, AI skills, or a mini-automation.</div>
+          </li>
+          <li class="flex gap-3">
+            <span class="text-slate-500 font-semibold">02</span>
+            <div><strong>Book a session.</strong> 60–90 minutes on Zoom or in person.</div>
+          </li>
+          <li class="flex gap-3">
+            <span class="text-slate-500 font-semibold">03</span>
+            <div><strong>See results fast.</strong> Time saved and next steps, documented.</div>
+          </li>
+        </ul>
+      </div>
     </div>
   </section>
 
@@ -135,9 +177,58 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="max-w-3xl">
         <h2 class="text-3xl font-bold tracking-tight">Services</h2>
-        <p class="mt-4 text-slate-600">Choose a starting point. We’ll tailor each package after a short discovery call.</p>
+        <p class="mt-4 text-slate-600">Pick a starting point. We tailor after a quick discovery call.</p>
       </div>
 
+      <!-- 1-to-1 + Bundles -->
+      <div class="mt-10 grid md:grid-cols-3 gap-6">
+        <div class="rounded-2xl bg-white border border-slate-200 p-6 flex flex-col">
+          <h3 class="text-xl font-semibold">1-to-1 Tech Support</h3>
+          <p class="mt-2 text-slate-600">Microsoft 365 & Google Workspace—cleanup, fixes, coaching.</p>
+          <div class="mt-4">
+            <div class="text-3xl font-bold">$150<span class="text-base font-medium text-slate-500">/hr</span></div>
+            <p class="text-sm text-slate-500 mt-1">Priority scheduling available.</p>
+          </div>
+          <ul class="mt-4 text-sm list-disc pl-5 text-slate-600 space-y-1">
+            <li>Zoom or on-site (as available)</li>
+            <li>Screen-share, step-by-step fixes</li>
+            <li>Mini how-to video recap</li>
+          </ul>
+          <a href="#book" class="mt-auto inline-flex justify-center px-4 py-2 rounded-lg bg-sky-600 text-white font-medium">Book a session</a>
+        </div>
+
+        <div class="rounded-2xl bg-white border border-slate-200 p-6 flex flex-col ring-2 ring-teal-500">
+          <h3 class="text-xl font-semibold">Support Bundle (3)</h3>
+          <p class="mt-2 text-slate-600">Three hours you can use over 60 days.</p>
+          <div class="mt-4">
+            <div class="text-3xl font-bold">$399</div>
+            <p class="text-sm text-slate-500 mt-1">Save $51 vs hourly.</p>
+          </div>
+          <ul class="mt-4 text-sm list-disc pl-5 text-slate-600 space-y-1">
+            <li>Flexible scheduling</li>
+            <li>Email/DM “quick questions” included</li>
+            <li>Issue log + outcomes report</li>
+          </ul>
+          <a href="#book" class="mt-auto inline-flex justify-center px-4 py-2 rounded-lg bg-teal-600 text-white font-medium">Get bundle</a>
+        </div>
+
+        <div class="rounded-2xl bg-white border border-slate-200 p-6 flex flex-col">
+          <h3 class="text-xl font-semibold">Support Bundle (6)</h3>
+          <p class="mt-2 text-slate-600">Six hours for a deeper cleanup or training plan.</p>
+          <div class="mt-4">
+            <div class="text-3xl font-bold">$749</div>
+            <p class="text-sm text-slate-500 mt-1">Save $151 vs hourly.</p>
+          </div>
+          <ul class="mt-4 text-sm list-disc pl-5 text-slate-600 space-y-1">
+            <li>Prioritized slots</li>
+            <li>Shared action plan</li>
+            <li>Short training library</li>
+          </ul>
+          <a href="#book" class="mt-auto inline-flex justify-center px-4 py-2 rounded-lg bg-slate-900 text-white font-medium">Get bundle</a>
+        </div>
+      </div>
+
+      <!-- Your original team-focused packages -->
       <div class="mt-10 grid md:grid-cols-3 gap-6">
         <div class="rounded-2xl bg-white border border-slate-200 p-6 flex flex-col">
           <h3 class="text-xl font-semibold">Starter Cleanup</h3>
@@ -148,7 +239,7 @@
             <li>Implementation session</li>
             <li>Quick-reference guide</li>
           </ul>
-          <a href="#contact" class="mt-auto inline-flex justify-center px-4 py-2 rounded-lg bg-slate-900 text-white font-medium">Enquire</a>
+          <a href="#book" class="mt-auto inline-flex justify-center px-4 py-2 rounded-lg bg-slate-900 text-white font-medium">Start</a>
         </div>
         <div class="rounded-2xl bg-white border border-slate-200 p-6 flex flex-col ring-2 ring-sky-500">
           <h3 class="text-xl font-semibold">Everyday AI Sprint</h3>
@@ -159,7 +250,7 @@
             <li>Prompt playbook + examples</li>
             <li>Follow-up coaching call</li>
           </ul>
-          <a href="#contact" class="mt-auto inline-flex justify-center px-4 py-2 rounded-lg bg-sky-600 text-white font-medium">Book discovery</a>
+          <a href="#book" class="mt-auto inline-flex justify-center px-4 py-2 rounded-lg bg-sky-600 text-white font-medium">Book discovery</a>
         </div>
         <div class="rounded-2xl bg-white border border-slate-200 p-6 flex flex-col">
           <h3 class="text-xl font-semibold">Automation Pilot</h3>
@@ -170,9 +261,29 @@
             <li>Build and test flow</li>
             <li>Impact report + next steps</li>
           </ul>
-          <a href="#contact" class="mt-auto inline-flex justify-center px-4 py-2 rounded-lg bg-slate-900 text-white font-medium">Discuss scope</a>
+          <a href="#book" class="mt-auto inline-flex justify-center px-4 py-2 rounded-lg bg-slate-900 text-white font-medium">Discuss scope</a>
         </div>
       </div>
+    </div>
+  </section>
+
+  <!-- Results / Social Proof -->
+  <section class="py-14 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <ul class="grid sm:grid-cols-3 gap-6 text-center">
+        <li class="rounded-2xl bg-slate-50 border border-slate-200 p-6">
+          <div class="text-3xl font-bold">10–20 hrs/mo</div>
+          <p class="mt-1 text-slate-600 text-sm">Typical time saved after one automation</p>
+        </li>
+        <li class="rounded-2xl bg-slate-50 border border-slate-200 p-6">
+          <div class="text-3xl font-bold">↓ 70%</div>
+          <p class="mt-1 text-slate-600 text-sm">Fewer file-sprawl issues after cleanup</p>
+        </li>
+        <li class="rounded-2xl bg-slate-50 border border-slate-200 p-6">
+          <div class="text-3xl font-bold">95%</div>
+          <p class="mt-1 text-slate-600 text-sm">Clients adopt 3+ AI prompts weekly</p>
+        </li>
+      </ul>
     </div>
   </section>
 
@@ -181,7 +292,7 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="max-w-3xl">
         <h2 class="text-3xl font-bold tracking-tight">A simple, outcome-first process</h2>
-        <p class="mt-4 text-slate-600">We reduce friction and show results quickly so changes stick.</p>
+        <p class="mt-4 text-slate-600">We reduce friction and show results fast so changes stick.</p>
       </div>
       <ol class="mt-10 grid md:grid-cols-3 gap-6">
         <li class="rounded-2xl border border-slate-200 p-6 bg-white">
@@ -212,6 +323,7 @@
           <p class="mt-4 text-slate-600">I’m an Intermediate Technical Analyst and consultant based in British Columbia. I build clean systems, teach practical AI, and design lightweight automations for teams that want real outcomes without heavy IT overhead.</p>
           <ul class="mt-6 text-slate-600 list-disc pl-5 space-y-2">
             <li>Experience with Microsoft 365, SharePoint/OneDrive, Power Automate</li>
+            <li>Google Workspace (Drive, Docs/Sheets/Slides, Gmail, Admin)</li>
             <li>Training design for educators, non-profits, and small businesses</li>
             <li>Clear, no-nonsense communication and measurable results</li>
           </ul>
@@ -231,14 +343,57 @@
     </div>
   </section>
 
-  <!-- Contact -->
+  <!-- Booking -->
+  <section id="book" class="py-20">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold tracking-tight">Book a session</h2>
+      <p class="mt-4 text-slate-600">Pick a time that works. You’ll get a short intake form so we can hit the ground running.</p>
+
+      <div class="mt-8 grid lg:grid-cols-2 gap-8">
+        <!-- Calendly/TidyCal embed -->
+        <div class="rounded-2xl border border-slate-200 overflow-hidden bg-white">
+          <!-- Replace src with your scheduling link -->
+          <iframe src="https://calendly.com/YOUR_HANDLE/60min" class="w-full h-[680px]" title="Book with TechTidy"></iframe>
+        </div>
+
+        <!-- Short qualifier form (non-functional placeholder) -->
+        <form class="bg-white border border-slate-200 rounded-2xl p-6 grid gap-4" aria-label="Session intake form">
+          <label class="block">
+            <span class="text-sm font-medium">What do you want to achieve in this session?</span>
+            <textarea rows="5" required class="mt-1 w-full rounded-xl border-slate-300 focus:border-sky-500 focus:ring-sky-500"></textarea>
+          </label>
+          <div class="grid md:grid-cols-2 gap-4">
+            <label class="block">
+              <span class="text-sm font-medium">Tooling</span>
+              <select class="mt-1 w-full rounded-xl border-slate-300 focus:border-sky-500 focus:ring-sky-500">
+                <option>Microsoft 365</option>
+                <option>Google Workspace</option>
+                <option>Both</option>
+                <option>Not sure</option>
+              </select>
+            </label>
+            <label class="block">
+              <span class="text-sm font-medium">Priority</span>
+              <select class="mt-1 w-full rounded-xl border-slate-300 focus:border-sky-500 focus:ring-sky-500">
+                <option>Standard</option>
+                <option>High (deadline soon)</option>
+              </select>
+            </label>
+          </div>
+          <p class="text-sm text-slate-500">We’ll confirm by email. No spam. No sharing your details.</p>
+          <button class="px-5 py-3 rounded-xl bg-sky-600 text-white font-medium" type="submit">Submit details</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact (fallback) -->
   <section id="contact" class="py-20">
     <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
       <h2 class="text-3xl font-bold tracking-tight">Contact</h2>
-      <p class="mt-4 text-slate-600">Tell me a little about your team and goals. I’ll reply within one business day.</p>
+      <p class="mt-4 text-slate-600">Prefer email? Tell me a little about your team and goals. I’ll reply within one business day.</p>
 
-      <!-- Replace action with Formspree/Netlify forms when deploying -->
-      <form id="contactForm" class="mt-8 grid gap-4 bg-white border border-slate-200 rounded-2xl p-6">
+      <form id="contactForm" class="mt-8 grid gap-4 bg-white border border-slate-200 rounded-2xl p-6" aria-label="Contact form">
         <div class="grid md:grid-cols-2 gap-4">
           <label class="block">
             <span class="text-sm font-medium">Name</span>
@@ -259,7 +414,7 @@
         </label>
         <div class="flex items-center justify-between gap-4">
           <div class="text-sm text-slate-500">No spam. No sharing your details.</div>
-          <button type="submit" class="px-5 py-3 rounded-xl bg-slate-900 text-white font-medium">Send</button>
+          <button type="submit" class="px-5 py-3 rounded-xl bg-slate-900 text-white font-medium">Send message</button>
         </div>
         <p id="formSuccess" class="hidden text-emerald-600 text-sm">Thanks — your message has been captured locally. Connect a form backend before going live.</p>
       </form>
@@ -272,6 +427,7 @@
       <nav class="text-sm flex gap-6">
         <a href="#learn" class="hover:text-sky-600">Learn</a>
         <a href="#services" class="hover:text-sky-600">Services</a>
+        <a href="#book" class="hover:text-sky-600">Book</a>
         <a href="#contact" class="hover:text-sky-600">Contact</a>
       </nav>
     </div>
@@ -286,7 +442,6 @@
     const success = document.getElementById('formSuccess');
     form.addEventListener('submit', (e) => {
       e.preventDefault();
-      // You can replace this with an actual POST to Formspree/Netlify
       success.classList.remove('hidden');
       form.reset();
     });
